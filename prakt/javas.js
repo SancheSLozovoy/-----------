@@ -1,11 +1,12 @@
+let btn, yellowPaarasha;
 
 
-var count = 0;
+btn = document.querySelector("#btn");
+yellowPaarasha = document.querySelector(".yellow-rectangle");
 
-function onClickButton(el){
-    count++;
-    el.innerHTML = "Вы нажади на кнопку " + count + " раз"
-    el.style.background = "red";
-    el.style.color = "white";
-    el.style.cssText = "border-radius: 150px; background-color: gray; color: white;";
+btn.onclick = hide;
+
+
+function hide(){
+    yellowPaarasha.hidden = true;
 }
